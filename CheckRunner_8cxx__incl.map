@@ -1,0 +1,18 @@
+<map id="Framework/src/CheckRunner.cxx" name="Framework/src/CheckRunner.cxx">
+<area shape="rect" id="node2" href="$CheckRunner_8h.html" title="QualityControl/CheckRunner.h" alt="" coords="1049,87,1249,114"/>
+<area shape="rect" id="node37" href="$DatabaseFactory_8h.html" title="QualityControl/DatabaseFactory.h" alt="" coords="1995,87,2215,114"/>
+<area shape="rect" id="node38" href="$TaskRunner_8h.html" title="QualityControl/TaskRunner.h" alt="" coords="2291,87,2482,114"/>
+<area shape="rect" id="node15" href="$CheckInterface_8h.html" title="QualityControl/CheckInterface.h" alt="" coords="467,259,677,285"/>
+<area shape="rect" id="node18" href="$MonitorObject_8h.html" title="QualityControl/MonitorObject.h" alt="" coords="518,341,719,367"/>
+<area shape="rect" id="node22" href="$DatabaseInterface_8h.html" title="QualityControl/DatabaseInterface.h" alt="" coords="1212,177,1439,203"/>
+<area shape="rect" id="node25" href="$QcInfoLogger_8h.html" title="QualityControl/QcInfoLogger.h" alt="" coords="143,259,342,285"/>
+<area shape="rect" id="node27" href="$Check_8h_source.html" title="QualityControl/Check.h" alt="" coords="594,177,753,203"/>
+<area shape="rect" id="node21" href="$Quality_8h.html" title="QualityControl/Quality.h" alt="" coords="846,341,1007,367"/>
+<area shape="rect" id="node23" href="$QualityObject_8h_source.html" title="QualityControl/QualityObject.h" alt="" coords="906,259,1105,285"/>
+<area shape="rect" id="node29" href="$CheckConfig_8h.html" title="QualityControl/CheckConfig.h" alt="" coords="1710,341,1906,367"/>
+<area shape="rect" id="node41" href="$TaskConfig_8h.html" title="QualityControl/TaskConfig.h" alt="" coords="2133,341,2320,367"/>
+<area shape="rect" id="node42" href="$TaskInterface_8h.html" title="QualityControl/TaskInterface.h" alt="" coords="2955,177,3155,203"/>
+<area shape="rect" id="node45" href="$Activity_8h.html" title="QualityControl/Activity.h" alt="" coords="2533,259,2697,285"/>
+<area shape="rect" id="node46" href="$ObjectsManager_8h.html" title="QualityControl/ObjectsManager.h" alt="" coords="2105,259,2319,285"/>
+<area shape="rect" id="node47" href="$MonitorObjectCollection_8h.html" title="QualityControl/MonitorObject\lCollection.h" alt="" coords="3201,333,3391,375"/>
+</map>
