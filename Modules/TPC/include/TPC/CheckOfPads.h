@@ -10,7 +10,7 @@
 
 ///
 /// \file   CheckOfPads.h
-/// \author Maximilian Horst
+/// \author Maximilian Horst, Marcel Lesch
 ///
 
 #ifndef QC_MODULE_TPC_CheckOfPads_H
@@ -41,33 +41,56 @@ class CheckOfPads : public o2::quality_control::checker::CheckInterface
 
  private:
   ClassDefOverride(CheckOfPads, 1);
+  std::string createMetaData(const std::vector<std::string>& pointMetaData);
   static constexpr std::string_view CheckChoiceMean = "Mean";
   static constexpr std::string_view CheckChoiceExpectedValue = "ExpectedValue";
   static constexpr std::string_view CheckChoiceBoth = "Both";
-  std::vector<std::string> mSectorsNameEV;
-  std::vector<Quality> mSectorsQualityEV;
-  std::vector<std::string> mSectorsNameMean;
-  std::vector<Quality> mSectorsQualityMean;
-  std::vector<Quality> mSectorsQualityEmpty;
-  std::vector<std::string> mSectorsName;
+
+  /*std::vector<std::string> mSectorsName;
   std::vector<Quality> mSectorsQuality;
-  std::vector<std::string> mMOsToCheck2D;
-  std::string mCheckChoice = "NULL";
-  std::vector<float> mPadMeans;
+  */
+
+  /* std::vector<float> mPadMeans;
   std::vector<float> mPadStdev;
   std::vector<float> mEmptyPadPercent;
+  std::vector<int> mPadCounts;
+  std::vector<float> mTotalPads;*/
+
+  std::string mSectorsName[72];
+  Quality mSectorsQuality[72];
+  std::vector<std::string> mMOsToCheck2D;
+
+  bool mROCExists[72];
+  float mPadMeans[72] = { 0. };
+  float mPadStdev[72] = { 0. };
+  float mEmptyPadPercent[72] = { 0. };
+  int mPadCounts[72] = { 0 };
+  float mTotalPads[72] = { 0. };
+
+  std::unordered_map<std::string, std::vector<std::string>> mROCMetaData;
+
   float mMediumQualityLimit;
   float mBadQualityLimit;
+
   float mExpectedValue;
   float mExpectedValueMediumSigmas;
   float mExpectedValueBadSigmas;
+
   float mMeanMediumSigmas;
   float mMeanBadSigmas;
+
+  float mExpectedMean;
+  float mExpectedMeanMediumSigmas;
+  float mExpectedMeanBadSigmas;
+
   float mTotalMean;
   float mTotalStdev;
+
   bool mEmptyCheck = false;
   bool mExpectedValueCheck = false;
   bool mMeanCheck = false;
+  bool mExpectedMeanCheck = false;
+  std::string mMetadataComment;
 };
 
 } // namespace o2::quality_control_modules::tpc
